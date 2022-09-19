@@ -18,6 +18,16 @@ public:
             return "not prime";
         else
             return "prime";
+
+        /* O(n);
+        for(int i=2; i<n; i++)
+            if(n % i == 0)
+                return true;
+        
+        O(sqrt(n))
+        for(int i=2; i<sqrt(n); i++)
+            if(n % i == 0)
+                return true*/
     }
     
 };
