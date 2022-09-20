@@ -1,0 +1,28 @@
+//practice stl - queue
+#include<bits/stdc++.h>
+using namespace std;
+
+void printQ(queue<string> q){
+    queue<string> q1 = q;
+
+    while(!q.empty() ){
+        cout << q.front() << "->";
+        q.pop();
+    }
+
+}
+
+int main()
+{
+    queue<string> q;
+
+    q.push("hi");
+    q.push("hello");
+    q.push("welcome");
+
+    printQ(q);
+
+
+    
+
+}
