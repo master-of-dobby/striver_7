@@ -16,6 +16,14 @@ class Solution{
         printNos(N-1);
         cout << N << " ";
     }
+
+    void fun1(int i, int n){
+        if(i > n)
+            return;
+        
+        cout << i << " ";
+        fun1(i+1, n);
+    }
 };
 
 //{ Driver Code Starts.
@@ -36,6 +44,8 @@ int main()
         Solution ob;
         //calling printNos() function
         ob.printNos(N);
+        cout << endl;
+        ob.fun1(1, N);
         cout << "\n";
     }
     return 0;
